@@ -1,6 +1,8 @@
 
+//sass --watch SCSS/main.scss:styles/style.css
 
 @use "variables" as *;
+
 
 
 .pro-landing__body {
@@ -9,7 +11,7 @@
   font-size: $default-font-size;
     @media (max-width: $breakpoint-mobile) {
       //margin: 0 auto;
-      //width: 100%;
+      width: 100%;
     }
 }
 
