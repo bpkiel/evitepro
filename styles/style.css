@@ -14,7 +14,7 @@
   padding-bottom: 2em;
 }
 @media screen and (max-width: 480px) {
-  .pro-landing__header header.pro-landing__header {
+  .pro-landing__header {
     padding-top: 0.25em;
   }
 }
@@ -24,14 +24,22 @@
   max-width: 900px;
   margin: 0 auto 0.75em;
 }
+@media screen and (max-width: 480px) {
+  .pro-landing__hero-header {
+    font-size: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: normal;
+  }
+}
 
 .pro-landing__hero-image {
   background-image: url("../resources/hero.png");
   background-size: auto 100%;
-  padding-bottom: 1em;
+  height: 450px;
   margin-bottom: 100px;
   overflow: hidden;
-  height: 450px;
+  padding-bottom: 1em;
 }
 
 .pro-landing__description-text {
@@ -40,12 +48,24 @@
   color: #2E3136;
   font-size: 18px;
 }
+@media screen and (max-width: 480px) {
+  .pro-landing__description-text {
+    font-size: 16px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
 
 .pro-landing__sellsheet-heading {
   font-size: 43px;
   max-width: 900px;
   font-weight: normal;
   margin: 0 auto 1.5em;
+}
+@media screen and (max-width: 480px) {
+  .pro-landing__sellsheet-heading {
+    font-size: 30px;
+  }
 }
 
 .superscript {
@@ -56,7 +76,7 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  width: 1350px;
+  max-width: 1350px;
   justify-content: space-around;
 }
 @media screen and (max-width: 480px) {
@@ -74,7 +94,7 @@
   padding-right: 25px;
   padding-top: 15px;
   margin-bottom: 100px;
-  width: 355px;
+  max-width: 355px;
 }
 
 .pro-landing__feature-block-header {
@@ -118,7 +138,7 @@
   font-weight: normal;
   line-height: 1.25em;
   margin: 0 auto 15px;
-  width: 715px;
+  max-width: 715px;
 }
 
 .pro-landing__dashboard-description {
@@ -128,17 +148,101 @@
   line-height: 1.25em;
   margin: 0 auto;
   padding-bottom: 50px;
-  width: 700px;
+  max-width: 700px;
 }
 
 .pro-landing__dashboard-img-1 {
   margin: 0 auto;
-  width: 800px;
+  max-width: 800px;
+}
+@media screen and (max-width: 480px) {
+  .pro-landing__dashboard-img-1 {
+    max-width: 400px;
+  }
 }
 
 .pro-landing__dashboard-img-2 {
   height: 525px;
-  padding-bottom: 100px;
+}
+
+.pro-landing__section-heading {
+  font-size: 43px;
+  font-weight: normal;
+  line-height: 1.25em;
+  margin: 0 auto 15px;
+  max-width: 715px;
+}
+
+.pro-landing__section-description {
+  color: #2E3136;
+  font-family: "Helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 1.25em;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  max-width: 700px;
+}
+
+.imagesdiv {
+  background-image: url("resources/RealEstate.png");
+  margin: 0 auto;
+  max-width: 1300px;
+  min-height: 519px;
+}
+
+.pro-landing__category-image-active {
+  max-width: 1300px;
+}
+
+.pro-landing__category-image-inactive {
+  display: none;
+}
+
+.pro-landing__invitation-samples-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.pro-landing__invitation-category-active {
+  border-bottom: 4px solid #28A842;
+  color: #28A842;
+  display: flex;
+  font-size: 18px;
+  max-width: 700px;
+  padding: 15px;
+}
+
+.pro-landing__invitation-category {
+  border-bottom: 4px solid white;
+  color: #91959C;
+  display: flex;
+  font-size: 18px;
+  max-width: 700px;
+  padding: 15px;
+}
+
+.hr {
+  max-width: 700px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.pro-landing__invitation-category:hover {
+  color: #28A842;
+}
+
+.pro-landing__feature-heading {
+  font-size: 43px;
+  font-weight: normal;
+  line-height: 1.25em;
+  margin: 0 auto 15px;
+  max-width: 715px;
+  padding-top: 100px;
 }
 
 .pro-landing__button, .pro-landing__button--download {
@@ -155,7 +259,8 @@
 }
 @media (max-width: 480px) {
   .pro-landing__button, .pro-landing__button--download {
-    max-width: 400px;
+    max-width: 225px;
+    margin-bottom: 30px;
   }
 }
 
